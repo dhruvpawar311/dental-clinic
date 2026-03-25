@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dr.Ankur's Ekdant Dental Clinic</title>
+
+<style>
+
+/* GENERAL */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+background:#f5fbff;
+color:#333;
+line-height:1.6;
+}
+
+/* HEADER */
+
+header{
+background:#0077b6;
+color:white;
+padding:20px;
+text-align:center;
+}
+
+header h1{
+font-size:42px;
+letter-spacing:2px;
+}
+
+header p{
+font-size:18px;
+margin-top:5px;
+}
+
+/* NAVIGATION */
+
+nav{
+background:#023e8a;
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+padding:15px 20px;
+font-weight:bold;
+}
+
+nav a:hover{
+background:#0077b6;
+}
+
+/* HERO */
+
+.hero{
+height:500px;
+background:url("https://images.unsplash.com/photo-1588776814546-ec7e9b4b9d4c") center/cover no-repeat;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+color:white;
+}
+
+.hero-text{
+background:rgba(0,0,0,0.6);
+padding:30px;
+border-radius:10px;
+}
+
+.hero h2{
+font-size:48px;
+}
+
+.hero p{
+margin-top:10px;
+font-size:20px;
+}
+
+/* SECTION */
+
+section{
+padding:60px 10%;
+text-align:center;
+}
+
+section h2{
+font-size:34px;
+margin-bottom:20px;
+color:#0077b6;
+}
+
+/* ABOUT */
+
+.about p{
+max-width:800px;
+margin:auto;
+font-size:18px;
+}
+
+/* SERVICES */
+
+.services{
+display:flex;
+flex-wrap:wrap;
+gap:30px;
+justify-content:center;
+margin-top:30px;
+}
+
+.service-card{
+background:white;
+width:260px;
+border-radius:10px;
+box-shadow:0 4px 12px rgba(0,0,0,0.1);
+overflow:hidden;
+transition:0.3s;
+}
+
+.service-card:hover{
+transform:translateY(-8px);
+}
+
+.service-card img{
+width:100%;
+height:170px;
+object-fit:cover;
+}
+
+.service-card h3{
+padding:15px;
+color:#0077b6;
+}
+
+/* DOCTORS */
+
+.doctors{
+display:flex;
+flex-wrap:wrap;
+gap:30px;
+justify-content:center;
+}
+
+.doctor-card{
+width:260px;
+background:white;
+border-radius:10px;
+box-shadow:0 4px 12px rgba(0,0,0,0.1);
+padding-bottom:20px;
+}
+
+.doctor-card img{
+width:100%;
+height:220px;
+object-fit:cover;
+border-radius:10px 10px 0 0;
+}
+
+.doctor-card h3{
+margin-top:10px;
+color:#0077b6;
+}
+
+/* GALLERY */
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+margin-top:30px;
+}
+
+.gallery img{
+width:100%;
+height:200px;
+object-fit:cover;
+border-radius:10px;
+}
+
+/* TESTIMONIAL */
+
+.testimonials{
+display:flex;
+flex-wrap:wrap;
+gap:30px;
+justify-content:center;
+}
+
+.testimonial{
+background:white;
+padding:20px;
+width:300px;
+border-radius:10px;
+box-shadow:0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* APPOINTMENT */
+
+.form-container{
+max-width:500px;
+margin:auto;
+}
+
+.form-container input,
+.form-container textarea{
+width:100%;
+padding:12px;
+margin:10px 0;
+border-radius:6px;
+border:1px solid #ccc;
+}
+
+.form-container button{
+background:#0077b6;
+color:white;
+padding:12px;
+border:none;
+border-radius:6px;
+cursor:pointer;
+width:100%;
+font-size:16px;
+}
+
+/* CONTACT */
+
+.contact-info{
+margin-top:20px;
+font-size:18px;
+}
+
+/* FOOTER */
+
+footer{
+background:#023e8a;
+color:white;
+text-align:center;
+padding:25px;
+margin-top:40px;
+}
+
+</style>
+</head>
+
+<body>
+<header>
+<img src="LOGO.jpg" alt= width="200" height="200">
+</header>
+
+
+<header>
+<h1>Dr.ANKUR's EKDANT DENTAL CLINIC & IMPLANT CENTRE</h1>
+<p>Professional Dental Care for Your Healthy Smile</p>
+</header>
+
+<nav>
+<a href="#">Home</a>
+<a href="#about">About</a>
+<a href="#services">Services</a>
+<a href="#doctors">Doctors</a>
+<a href="#gallery">Gallery</a>
+<a href="#appointment">Appointment</a>
+<a href="#contact">Contact</a>
+</nav>
+
+<div class="hero">
+<div class="hero-text">
+<h2>Welcome to Ekdant Dental Clinic</h2>
+<p>Advanced Dental Care with Modern Technology</p>
+</div>
+</div>
+<h1 style="color: orange; text-align: center;"><u>
+    "कृष्णं वन्दे जगद्गुरुम्" 
+</u></h1>
+<section id="about" class="about">
+<h2>About Our Clinic</h2>
+
+<p>
+Ekdant Dental Clinic is committed to providing high-quality dental care
+with advanced technology and experienced professionals. Our clinic offers
+a wide range of dental services including preventive, cosmetic and
+restorative dentistry. We focus on patient comfort and modern treatment
+methods to ensure the best dental care for every patient.
+</p>
+
+</section>
+
+<section id="services">
+
+<h2>Our Dental Services</h2>
+
+<div class="services">
+
+<div class="service-card">
+<img src="teethcleaning.jpg">
+<h3>Teeth Cleaning</h3>
+</div>
+
+<div class="service-card">
+<img src="teeth.jpg">
+<h3>Teeth Whitening</h3>
+</div>
+
+<div class="service-card">
+<img src="implement.jpg">
+<h3>Dental Implants</h3>
+</div>
+
+<div class="service-card">
+<img src="remove.jpg">
+<h3>Tooth Removal</h3>
+</div>
+
+<div class="service-card">
+<img src="root.jpg">
+<h3>root canal</h3>
+</div>
+
+</div>
+
+</section>
+
+<section id="doctors">
+
+<h2>Our Dental Specialists</h2>
+
+<div class="doctors">
+
+<div class="doctor-card">
+<img src="dr.jpg">
+<h3>Dr.Ankur Subhash Ahire</h3>
+<p>B.D.S(Dental Surgeon)</p>
+</div>
+
+
+</div>
+
+</section>
+
+<section id="gallery">
+
+<h2>Clinic Gallery</h2>
+
+<div class="gallery">
+
+<img src="entrance.jpg">
+<img src="desk.jpg">
+<img src="operation.jpg">
+<img src="sitting.jpg">
+
+</div>
+
+</section>
+
+<section>
+
+<h2>Patient Testimonials</h2>
+
+<div class="testimonials">
+
+<div class="testimonial">
+<p>"Excellent treatment and very friendly staff. Highly recommended clinic."</p>
+<strong>- Aditya Pawar</strong>
+</div>
+
+<div class="testimonial">
+<p>"Modern equipment and very professional dentists. My experience was great."</p>
+<strong>- Aryan Pawar</strong>
+</div>
+<div class="testimonial">
+<p>"Modern equipment and very professional dentists. My experience was great."</p>
+<strong>- Dhruv Pawar</strong>
+</div>
+
+</div>
+
+</section>
+
+<section id="appointment">
+
+<h2>Book an Appointment</h2>
+
+<div class="form-container">
+
+<input type="text" placeholder="Your Name">
+
+<input type="email" placeholder="Your Email">
+
+<input type="tel" placeholder="Phone Number">
+
+<textarea rows="4" placeholder="Message"></textarea>
+
+<button>Book Appointment</button>
+
+</div>
+
+</section>
+
+<section id="contact">
+
+<h2>Contact Us</h2>
+
+<div class="contact-info">
+<pre>
+<p>,<h4>📍 Address:
+Shop no 4, roongta florenza building, near kuber lawns, Khode Mala, Prabhat Colony, Nashik, Maharashtra 422009
+850.0 m </h4></p>
+</pre>
+<p>📞 Phone: +91 8320067943</p>
+<p>📧 Email: 12anksahire@gmail.com</p>
+<img src="addscan.jpg" alt= width="200" height="200">
+
+
+</div>
+
+</section>
+
+<footer>
+
+<p>© 2026 Ekdant Dental Clinic | All Rights Reserved</p>
+
+</footer>
+
+</body>
+</html>
